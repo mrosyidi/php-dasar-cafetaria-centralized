@@ -7,5 +7,8 @@
   require_once __DIR__ . "/View/ViewShowFood.php";
   require_once __DIR__ . "/View/ViewAddFood.php";
   require_once __DIR__ . "/View/ViewRemoveFood.php";
+  require_once __DIR__ . "/View/ViewMainMenu.php";
 
   echo "Cafetaria App" . PHP_EOL;
+
+  viewMainMenu();
