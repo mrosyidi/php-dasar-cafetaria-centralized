@@ -3,6 +3,7 @@
   require_once __DIR__ . "/../BusinessLogic/ShowFood.php";
   require_once __DIR__ . "/ViewMainMenu.php";
   require_once __DIR__ . "/ViewAddFood.php";
+  require_once __DIR__ . "/ViewRemoveFood.php";
   require_once __DIR__ . "/../Helper/Input.php";
 
   function viewShowFood(): void
@@ -23,7 +24,7 @@
         viewAddFood();
       }else if($pilihan == "2")
       {
-
+        viewRemoveFood();
       }else if($pilihan == "x")
       {
         viewMainMenu();
