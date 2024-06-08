@@ -1,6 +1,7 @@
 <?php
 
   require_once __DIR__ . "/ViewShowFood.php";
+  require_once __DIR__ . "/ViewShowDrink.php";
   require_once __DIR__ . "/../Helper/Input.php";
 
   function viewMainMenu(): void
@@ -20,7 +21,7 @@
         viewShowFood();
       }else if($pilihan == "2")
       {
-        echo "Daftar Minuman" . PHP_EOL;
+        viewShowDrink();
       }else if($pilihan == "3")
       {
         echo "Pemesanan" . PHP_EOL;
