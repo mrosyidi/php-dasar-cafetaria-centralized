@@ -24,10 +24,12 @@
       {
         $exit = $open ? true : false;
         viewAddOrder(1, $exit);
-        $close = false;
+        $open = false;
       }else if($pilihan == "2")
       {
-
+        $exit = $open ? true : false;
+        viewAddOrder(2, $exit);
+        $open = false;
       }else if($pilihan == "x")
       {
         viewMainMenu();
