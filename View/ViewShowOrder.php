@@ -2,10 +2,13 @@
 
   require_once __DIR__ . "/../BusinessLogic/ShowOrder.php";
   require_once __DIR__ . "/../View/ViewMainMenu.php";
+  require_once __DIR__ . "/../View/ViewAddOrder.php";
   require_once __DIR__ . "/../Helper/Input.php";
 
   function viewShowOrder(): void
   {
+    $open = true;
+
     while(true)
     {
       showOrder();
@@ -19,7 +22,9 @@
 
       if($pilihan == "1")
       {
-
+        $exit = $open ? true : false;
+        viewAddOrder(1, $exit);
+        $close = false;
       }else if($pilihan == "2")
       {
 
