@@ -3,6 +3,7 @@
   require_once __DIR__ . "/Model/Foods.php";
   require_once __DIR__ . "/Model/Drinks.php";
   require_once __DIR__ . "/Model/Orders.php";
+  require_once __DIR__ . "/Model/Payments.php";
   require_once __DIR__ . "/BusinessLogic/ShowFood.php";
   require_once __DIR__ . "/BusinessLogic/AddFood.php";
   require_once __DIR__ . "/BusinessLogic/RemoveFood.php";
