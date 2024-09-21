@@ -1,8 +1,9 @@
 <?php
 
   require_once __DIR__ . "/../BusinessLogic/ShowOrder.php";
-  require_once __DIR__ . "/../Helper/Input.php";
   require_once __DIR__ . "/ViewMainMenu.php";
+  require_once __DIR__ . "/ViewAddPayment.php";
+  require_once __DIR__ . "/../Helper/Input.php";
 
   function viewShowPayment(): void
   {
@@ -18,7 +19,7 @@
 
       if($pilihan == "1")
       {
-
+        viewAddPayment();
       }else if($pilihan == "x")
       {
         viewMainMenu();
