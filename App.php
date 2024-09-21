@@ -12,6 +12,7 @@
   require_once __DIR__ . "/BusinessLogic/RemoveDrink.php";
   require_once __DIR__ . "/BusinessLogic/ShowOrder.php";
   require_once __DIR__ . "/BusinessLogic/AddOrder.php";
+  require_once __DIR__ . "/BusinessLogic/RemoveOrder.php";
   require_once __DIR__ . "/BusinessLogic/ShowPayment.php";
   require_once __DIR__ . "/BusinessLogic/AddPayment.php";
   require_once __DIR__ . "/View/ViewShowFood.php";
