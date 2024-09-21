@@ -2,6 +2,7 @@
 
   require_once __DIR__ . "/../Model/Payments.php";
   require_once __DIR__ . "/../BusinessLogic/AddPayment.php";
+  require_once __DIR__ . "/../BusinessLogic/RemoveOrder.php";
   require_once __DIR__ . "/../Helper/Input.php";
   require_once __DIR__ . "/../Helper/Duplicate.php";
   require_once __DIR__ . "/../Helper/Find.php";
@@ -43,6 +44,7 @@
           addPayment($code, $pay, $money);
 
           $elements = duplicate($code);
+          removeOrder($code);
 
           echo "Kembalian : Rp." . $change . PHP_EOL;
         }
