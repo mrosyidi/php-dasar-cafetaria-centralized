@@ -5,9 +5,13 @@
     global $orders;
     global $payments;
 
-    if(empty($orders))
+    if(empty($orders) && empty($payments))
     {
       $code = 1;
+    }else if(empty($orders) && !empty($payments))
+    {
+      $max = max(array_column($payments, 'code'));
+      $code = $max + 1;
     }else if(!empty($orders) && !$exit)
     {
       $code = $orders[sizeof($orders)]["code"];
