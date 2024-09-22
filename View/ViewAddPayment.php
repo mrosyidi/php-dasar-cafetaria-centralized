@@ -21,7 +21,7 @@
       echo "Batal memproses pesanan" . PHP_EOL;
     }else
     {
-      $codeOrder = find($code);
+      $codeOrder = find($code, 'order');
 
       if($codeOrder)
       {
