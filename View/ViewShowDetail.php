@@ -10,37 +10,40 @@
   {
     global $payments;
 
-    showPayment();
-
-    echo "Menu Detail" . PHP_EOL;
-    echo "1. Tampilkan Detail" . PHP_EOL;
-    echo "x. Kembali" . PHP_EOL;
-
-    $pilihan = input("Pilih");
-
-    if($pilihan == "1")
+    while(true)
     {
-      $code = input("Kode Pesanan (x untuk batal)");
+      showPayment();
 
-      if($code == "x")
+      echo "Menu Detail" . PHP_EOL;
+      echo "1. Tampilkan Detail" . PHP_EOL;
+      echo "x. Kembali" . PHP_EOL;
+
+      $pilihan = input("Pilih");
+
+      if($pilihan == "1")
       {
-        echo "Batal melihat detail pesanan" . PHP_EOL;
-      }else if(empty($payments))
+        $code = input("Kode Pesanan (x untuk batal)");
+
+        if($code == "x")
+        {
+          echo "Batal melihat detail pesanan" . PHP_EOL;
+        }else if(empty($payments))
+        {
+          echo "Tidak ada daftar pembayaran" . PHP_EOL;
+        }else if(!find($code, 'payment'))
+        {
+          echo "Tidak ada kode pesanan yang sesuai dengan data pembayaran" . PHP_EOL;
+        }else
+        {
+          showDetail($code);
+        }
+      }else if($pilihan == "x")
       {
-        echo "Tidak ada daftar pembayaran" . PHP_EOL;
-      }else if(!find($code, 'payment'))
-      {
-        echo "Tidak ada kode pesanan yang sesuai dengan data pembayaran" . PHP_EOL;
+        viewMainMenu();
+        exit();
       }else
       {
-        showDetail($code);
+        echo "Pilihan tidak dimengerti" . PHP_EOL;
       }
-    }else if($pilihan == "x")
-    {
-      viewMainMenu();
-      exit();
-    }else
-    {
-      echo "Pilihan tidak dimengerti" . PHP_EOL;
     }
   }
