@@ -11,11 +11,13 @@
       echo "Tidak ada daftar detail" . PHP_EOL;
     }else
     {
-      foreach($details as $number => $detail)
+      $counter = 0;
+      foreach($details as $detail)
       {
         if($detail['code'] == $code)
         {
-          echo "$number. " . $detail['code'] . " " . $detail['name'] . " Rp." . $detail['price'] . " (x"
+          $counter++;
+          echo "$counter. " . $detail['code'] . " " . $detail['name'] . " Rp." . $detail['price'] . " (x"
           . $detail['qty'] . ") " . $detail['sub_total'] . PHP_EOL;
         }
       }
