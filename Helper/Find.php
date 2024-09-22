@@ -1,16 +1,17 @@
 <?php
 
-  function find(int $code): bool
+  function find(int $code, string $category): bool
   {
     global $orders;
 
     $found = false;
     $index = 1;
-    $elements = is_array($orders) ? sizeof($orders) : 0;
+    $items = $category == 'order' ? $orders : $payments;
+    $elements = is_array($items) ? sizeof($items) : 0;
 
     while($index <= $elements && !$found)
     {
-      if($orders[$index]['code'] == $code)
+      if($items[$index]['code'] == $code)
       {
         $found = true;
       }else
