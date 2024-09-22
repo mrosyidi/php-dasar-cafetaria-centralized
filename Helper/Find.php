@@ -3,6 +3,7 @@
   function find(int $code, string $category): bool
   {
     global $orders;
+    global $payments;
 
     $found = false;
     $index = 1;
