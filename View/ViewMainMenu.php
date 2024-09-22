@@ -4,6 +4,7 @@
   require_once __DIR__ . "/ViewShowDrink.php";
   require_once __DIR__ . "/ViewShowOrder.php";
   require_once __DIR__ . "/ViewShowPayment.php";
+  require_once __DIR__ . "/ViewShowDetail.php";
   require_once __DIR__ . "/../Helper/Input.php";
 
   function viewMainMenu(): void
@@ -15,6 +16,7 @@
       echo "2. Daftar Minuman" . PHP_EOL;
       echo "3. Pemesanan" . PHP_EOL;
       echo "4. Pembayaran" . PHP_EOL;
+      echo "5. Detail" . PHP_EOL;
       echo "x. Keluar" . PHP_EOL;
 
       $pilihan = input("Pilih");
@@ -31,6 +33,9 @@
       }else if($pilihan == "4")
       {
         viewShowPayment();
+      }else if($pilihan == "5")
+      {
+        viewShowDetail();
       }else if($pilihan == "x")
       {
         break;
