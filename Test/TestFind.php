@@ -9,7 +9,7 @@
   showOrder();
   $code = input("Kode Pemesanan");
 
-  $result = find($code);
+  $result = find($code, 'order');
   var_dump($result);
 
   addOrder(2, "Mie Ayam", 6000, 1);
@@ -18,12 +18,12 @@
   showOrder();
   $code = input("Kode Pemesanan");
 
-  $result = find($code);
+  $result = find($code, 'order');
   var_dump($result);
 
 
   showOrder();
   $code = input("Kode Pemesanan");
 
-  $result = find($code);
+  $result = find($code, 'order');
   var_dump($result);
