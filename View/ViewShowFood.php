@@ -1,7 +1,6 @@
 <?php
 
   require_once __DIR__ . "/../BusinessLogic/ShowFood.php";
-  require_once __DIR__ . "/ViewMainMenu.php";
   require_once __DIR__ . "/ViewAddFood.php";
   require_once __DIR__ . "/ViewRemoveFood.php";
   require_once __DIR__ . "/../Helper/Input.php";
@@ -27,8 +26,7 @@
         viewRemoveFood();
       }else if($pilihan == "x")
       {
-        viewMainMenu();
-        exit;
+        break;
       }else
       {
         echo "Pilihan tidak dimengerti" . PHP_EOL;

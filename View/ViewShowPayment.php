@@ -1,7 +1,6 @@
 <?php
 
   require_once __DIR__ . "/../BusinessLogic/ShowOrder.php";
-  require_once __DIR__ . "/ViewMainMenu.php";
   require_once __DIR__ . "/ViewAddPayment.php";
   require_once __DIR__ . "/../Helper/Input.php";
 
@@ -22,8 +21,7 @@
         viewAddPayment();
       }else if($pilihan == "x")
       {
-        viewMainMenu();
-        exit();
+        break;
       }else
       {
         echo "Pilihan tidak dimengerti" . PHP_EOL;
