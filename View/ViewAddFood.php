@@ -27,7 +27,7 @@
             }else if($price <= 0)
             {
                 echo "Gagal menambah makanan, harga makanan harus bilangan positif" . PHP_EOL;
-            }else if(check($name))
+            }else if(check($name, "food"))
             {
                 echo "Gagal menambah makanan, nama makanan sudah ada" . PHP_EOL;
             }else
