@@ -1,6 +1,7 @@
 <?php 
 
     require_once __DIR__ . "/../BusinessLogic/ShowDrink.php";
+    require_once __DIR__ . "/../View/ViewAddDrink.php";
     require_once __DIR__ . "/../Helper/Input.php";
 
     function viewShowDrink(): void 
@@ -18,7 +19,7 @@
 
             if($pilihan == "1")
             {
-
+                viewAddDrink();
             }else if($pilihan == "2")
             {
 
