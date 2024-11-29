@@ -1,16 +1,23 @@
-<?php
+<?php 
 
-  function check(string $name): bool
+  function check(string $name, string $category): bool
   {
     global $foods;
+    global $drinks;
+
+    $collections = $category == "food" ? $foods : $drinks;
 
     $found = false;
 
-    foreach($foods as $key => $food)
+    foreach($collections as $key => $collection)
     {
-      $food_name = preg_replace('/\s+/', '', strtolower($food["name"]));
+      $collection_name = preg_replace('/\s+/', '', strtolower($collection["name"]));
       $name = preg_replace('/\s+/', '', strtolower($name));
-      if($food_name === $name) $found = true;
+
+      if($collection_name === $name)
+      {
+        $found = true;
+      }
     }
 
     return $found;
