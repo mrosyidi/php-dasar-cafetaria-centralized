@@ -35,7 +35,7 @@
             viewShowFood();
         }else if($pilihan == "2")
         {
-
+            viewShowDrink();
         }else if($pilihan == "3")
         {
 
