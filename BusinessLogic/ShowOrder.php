@@ -17,5 +17,3 @@
             echo "Tidak ada daftar pesanan" . PHP_EOL;
         }
     }
-
-    showOrder();
