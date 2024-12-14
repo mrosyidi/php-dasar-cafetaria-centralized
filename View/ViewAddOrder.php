@@ -59,11 +59,3 @@
             }
         }
     }
-
-    require_once __DIR__ . "/../View/ViewShowOrder.php";
-    
-    $foods[1]["name"] = "Mie Goreng";
-    $foods[1]["price"] = 6000;
-
-    viewAddOrder(1, true);
-    showOrder();

@@ -5,6 +5,8 @@
 
     function viewShowOrder(): void 
     {
+        $open = true;
+
         while(true)
         {
             showOrder();
@@ -18,7 +20,9 @@
 
             if($pilihan == "1")
             {
-
+                $exit = $open ? true : false;
+                viewAddOrder(1, $exit);
+                $open = false;
             }else if($pilihan == "2")
             {
 
