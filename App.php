@@ -43,7 +43,7 @@
             viewShowDrink();
         }else if($pilihan == "3")
         {
-
+            viewShowOrder();
         }else if($pilihan == "4")
         {
 
