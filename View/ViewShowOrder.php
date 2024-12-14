@@ -25,7 +25,9 @@
                 $open = false;
             }else if($pilihan == "2")
             {
-
+                $exit = $open ? true : false;
+                viewAddOrder(2, $exit);
+                $open = false;
             }else if($pilihan == "x")
             {
                 break;
