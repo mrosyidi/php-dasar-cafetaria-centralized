@@ -1,6 +1,29 @@
 <?php   
 
+    require_once __DIR__ . "/../BusinessLogic/ShowOrder.php";
+    require_once __DIR__ . "/../Helper/Input.php";
+
     function viewShowPayment(): void 
     {
-        
+        while(true)
+        {
+            showOrder();
+
+            echo "Menu Pembayaran" . PHP_EOL;
+            echo "1. Bayar Pesanan" . PHP_EOL;
+            echo "x. Kembali" . PHP_EOL;
+
+            $pilihan = input("Pilih");
+
+            if($pilihan == "1")
+            {
+
+            }else if($pilihan == "x")
+            {
+                break;
+            }else 
+            {
+                echo "Pilihan tidak dimengerti" . PHP_EOL;
+            }
+        }
     }
