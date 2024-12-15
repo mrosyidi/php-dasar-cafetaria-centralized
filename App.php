@@ -23,6 +23,7 @@
     require_once __DIR__ . "/View/ViewShowOrder.php";
     require_once __DIR__ . "/View/ViewAddOrder.php";
     require_once __DIR__ . "/View/ViewShowPayment.php";
+    require_once __DIR__ . "/View/ViewAddPayment.php";
     require_once __DIR__ . "/Helper/Input.php";
 
     echo "Cafetaria App" . PHP_EOL;
