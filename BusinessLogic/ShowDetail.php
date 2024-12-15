@@ -11,7 +11,8 @@
             echo "Tidak ada daftar detail" . PHP_EOL;
         }else
         {
-            foreach($details as $number => $detail)
+            $number = 0;
+            foreach($details as $detail)
             {
                 if($detail['code'] == $code)
                 {
