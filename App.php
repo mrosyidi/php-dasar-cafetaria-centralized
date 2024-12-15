@@ -51,7 +51,7 @@
             viewShowOrder();
         }else if($pilihan == "4")
         {
-
+            viewShowPayment();
         }else if($pilihan == "5")
         {
 
