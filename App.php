@@ -59,7 +59,7 @@
             viewShowPayment();
         }else if($pilihan == "5")
         {
-
+            viewShowDetail();
         }else if($pilihan == "x")
         {
             break;
